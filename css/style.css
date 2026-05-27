@@ -515,3 +515,13 @@ body::before {
 
   z-index: -1;
 }
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cat-icon {
+  font-size: 18px;
+}

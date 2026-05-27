@@ -136,7 +136,14 @@ const menu = [
   }
 ];
 
-const categories = ["Все", "Пицца", "Бургеры", "Завтраки", "Десерты"];
+const categories = [
+  { name: "Все", icon: "🍽️" },
+  { name: "Пицца", icon: "🍕" },
+  { name: "Бургеры", icon: "🍔" },
+  { name: "Завтраки", icon: "🍳" },
+  { name: "Десерты", icon: "🍰" }
+];
+
 
 const menuContainer = document.getElementById("menuContainer");
 const categoriesContainer = document.getElementById("categories");
@@ -214,13 +221,16 @@ function renderCategories() {
     const btn = document.createElement("button");
 
     btn.className = `category-btn ${
-      selectedCategory === category ? "active" : ""
+      selectedCategory === category.name ? "active" : ""
     }`;
 
-    btn.textContent = category;
+    btn.innerHTML = `
+      <span class="cat-icon">${category.icon}</span>
+      <span>${category.name}</span>
+    `;
 
     btn.addEventListener("click", () => {
-      selectedCategory = category;
+      selectedCategory = category.name;
       renderCategories();
       renderMenu();
     });
