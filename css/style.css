@@ -491,3 +491,27 @@ body {
     font-size: 14px;
   }
 }
+
+
+body::before {
+  content: "";
+
+  position: fixed;
+
+  top: 0;
+  right: 30px;
+
+  width: 120px;
+  height: 100vh;
+
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat-y;
+
+  background-size: contain;
+
+  opacity: 0.7;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
