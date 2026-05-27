@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Menu</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <img src="./img/barashki_logo.jpg" alt="Барашки" class="logo" />
+
+    <div class="brand-text">
+      <span class="restaurant-type">Ресторан</span>
+      <h1>БАРАШКИ</h1>
+      <span class="city">Великий Новгород</span>
+    </div>
+  </div>
+
+  <button class="cart-btn" id="openCartBtn">
+    🛒 Смотреть заказ
+    <span class="cart-badge" id="cartBadge">0</span>
+  </button>
+</header>
+
+  <section class="categories" id="categories"></section>
+
+  <main class="menu-container" id="menuContainer"></main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Ваш заказ</h2>
+        <button class="close-btn" id="closeModalBtn">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-footer">
+        <div class="total">
+          <span>Итого:</span>
+          <strong id="totalPrice">0 ₽</strong>
+        </div>
+
+        <p class="waiter-text">
+          Обратитесь к официанту для оформления заказа
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
