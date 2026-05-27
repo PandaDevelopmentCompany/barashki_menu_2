@@ -483,3 +483,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media screen and (max-width: 410px) {
+  .cart-btn {
+    margin-left: 5px;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
