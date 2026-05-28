@@ -1,59 +1,123 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QR Menu</title>
 
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Ссылка недоступна</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #0f1115;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+
+      background: #171a21;
+
+      border: 1px solid rgba(255,255,255,0.06);
+
+      border-radius: 28px;
+
+      padding: 42px 32px;
+
+      text-align: center;
+
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.45);
+    }
+
+    .icon {
+      font-size: 54px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: #b5b5b5;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .phone {
+      margin-top: 24px;
+
+      display: inline-block;
+
+      padding: 14px 20px;
+
+      border-radius: 16px;
+
+      background: #ffffff10;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-weight: 600;
+
+      transition: 0.2s;
+    }
+
+    .phone:hover {
+      background: #ffffff18;
+      transform: translateY(-2px);
+    }
+
+    .small {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #7f7f7f;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="header">
-  <div class="brand">
-    <img src="./img/barashki_logo.jpg" alt="Барашки" class="logo" />
+  <div class="card">
+    <div class="icon">🔒</div>
 
-    <div class="brand-text">
-      <span class="restaurant-type">Ресторан</span>
-      <h1>БАРАШКИ</h1>
-      <span class="city">Великий Новгород</span>
+    <h1>Срок действия ссылки истёк</h1>
+
+    <p>
+      Доступ к демонстрационной версии сайта был временно ограничен
+      во избежание распространения конфиденциальных материалов.
+    </p>
+
+    <p style="margin-top:16px;">
+      Для повторного получения доступа, пожалуйста,
+      свяжитесь с разработчиком.
+    </p>
+
+    <a class="phone" href="tel:+79221387487">
+      Андронов Александр — 8 (922) 138-74-87
+    </a>
+
+    <div class="small">
+      Panda Development Company
     </div>
   </div>
 
-  <button class="cart-btn" id="openCartBtn">
-    🛒 Смотреть заказ
-    <span class="cart-badge" id="cartBadge">0</span>
-  </button>
-</header>
-
-  <section class="categories" id="categories"></section>
-
-  <main class="menu-container" id="menuContainer"></main>
-
-  <!-- MODAL -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal">
-      <div class="modal-header">
-        <h2>Ваш заказ</h2>
-        <button class="close-btn" id="closeModalBtn">✕</button>
-      </div>
-
-      <div class="cart-items" id="cartItems"></div>
-
-      <div class="cart-footer">
-        <div class="total">
-          <span>Итого:</span>
-          <strong id="totalPrice">0 ₽</strong>
-        </div>
-
-        <p class="waiter-text">
-          Обратитесь к официанту для оформления заказа
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/app.js"></script>
 </body>
 </html>
